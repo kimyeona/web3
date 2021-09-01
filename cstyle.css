@@ -1,6 +1,7 @@
 @import url("https://use.typekit.net/way7gmx.css");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 @font-face {
     font-family: 'Helvetica-Now';
     src: url('Helvetica-Now.woff') format('woff'); /* Modern Browsers */
@@ -25,6 +26,14 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+@font-face {
+    font-family: 'AGChoijeonghoMinburiStd';
+    src: url('AGChoijeonghoMinburiStd.woff') format('woff'); /* Modern Browsers */
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
 
 
 * {
@@ -34,10 +43,11 @@
 }
 
 body {
-  font-family:'Helvetica-Now' ,'Noto Sans KR', sans-serif;
-  font-weight: 300;
+  font-family: 'AGChoijeonghoMinburiStd', sans-serif;
   opacity: 0;
   transition: opacity .5s;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 /*responsive display none*/
@@ -133,7 +143,7 @@ main {
   display: block;
   margin: auto;
   padding: 0 5%;
-  font-family: 'Helvetica-Now', 'Noto Sans KR', sans-serif;
+  font-family: 'AGChoijeonghoMinburiStd', sans-serif;
   word-break: keep-all;
 }
 
@@ -154,16 +164,13 @@ main {
 }
 .row {
   line-height: 35px;
-  font-size: 22px;
   margin-top: 30px;
 }
 
 .left p {
   padding-top: 15px;
   max-width: 90%;
-  font-weight: 300;
-  font-size: 22px;
-  line-height: 35px;
+
 }
 
   .right:after {
@@ -179,37 +186,34 @@ main {
   }
 
   .sec {
-    padding: 15px 0 10px;
-    font-family: 'Helvetica-Now', 'Noto Sans KR', sans-serif;
-    font-size: 22px;
-    line-height: 35px;
+    padding: 20px 0 20px;
+
   }
   .txt {
     padding-bottom: 80px;
-    font-family: 'Noto Sans KR', sans-serif;
   }
   .btn {
     background-color: #fff;
-
+    color: #000;
 /*    margin-top: 15px;*/
     border-radius: 400px;
     padding: 0px 15px;
     padding-top: 2px;
 
 
-    font-size: 20px;
-    font-family: 'Helvetica-Now';
+
     text-align: center;
-    color: #000;
-    border: 1px solid #000;
+    border: 2px solid #000;
     transition: 0.2s ease-in;
     margin-left: 15px;
 
+    background-color: #000;
+    color: #fff;
   }
 
   .btn:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
   }
   a {
     color: inherit;
@@ -226,7 +230,35 @@ main {
     list-style-position: outside;
   }*/
 
+  
+  .ll {
+    float: left;
+    width: 10%;
+    padding-top: 2px;
+  }
+  .rr {
+    float: left;
+    width: 90%;
+    margin-bottom: 32px;
+    line-height: 38px;
+  }
 
+  @media (max-width: 1078px){
+    .ll {
+      width: 15%;
+    }
+    .rr {
+      width: 85%;
+    }
+  }
+  @media (max-width: 500px){
+    .ll {
+      width: 20%;
+    }
+    .rr {
+      width: 80%;
+    }
+  }
 
 /*responsive*/
 
@@ -287,7 +319,7 @@ main {
     position: fixed;
     right: 0;
     top: 0;
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-color: #fff;
     display: inline-flex;
@@ -300,13 +332,14 @@ main {
 
     transition: 2s ease-in;
     opacity: 1;
+    overflow: hidden;
   }
   .nav_mobile a {
     font-family: 'Helvetica-Bold', sans-serif;
     font-size: 22px;
     color: #000;
     display: inline-block;
-    padding-bottom: 30px;
+    padding-bottom: 26px;
     padding-right: 0px;
   }
   .sns_mobile {
@@ -320,15 +353,37 @@ main {
     flex-direction: row;
 
     background-color: #fff;
-    height: 10vh;
+    height: 83px;
     justify-content: center;
     align-items: center;
     border-top: 1.5px solid #ebebeb;
   }
   .sns_mobile li {
-    margin: 0px 16px;
+    margin: 0px 17px;
+    padding-top: 10px;
   }
+
+
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .btn {
+    display: block;
+    margin-left: 0;
+    margin-top: 7px;
+  }
+  .left {
+    margin-bottom: 70px;
+  }
+  .left p {
+    max-width: 100%;
+  }
+
 }
+
 
 @media (max-width: 1078px){
   .nav_links {
