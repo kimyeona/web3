@@ -129,9 +129,14 @@
           }
 
           .text {
+            font-weight: 300;
+            line-height: 32px;
             padding-top: 15px;
-            padding-bottom: 15px;
-            max-width: 1000px;
+          }
+          .caption {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 23px;
           }
 
           .questions:checked ~ .answers{
@@ -165,65 +170,55 @@
             font-size: 25px;
             font-weight: normal;
             position: absolute;
-            left: 100px;
-            top: 4px;
+            left: 105px;
+            top: 3px;
           }
 
           input:checked + label::after {
             content: '—';
-            font-size: 18px;
-            left: 100px;
-            top: 4px;
+            font-size: 20px;
+            left: 105px;
+            top: 2px;
           }
-
           .column {
-            border-top: 0.1em dotted;
-            padding-top: 10px;
             float: left;
-            width: 100%;
-          }
-          .column2 {
-            padding-top: 15px;
-            float: left;
-            width: 100%;
+            width: 50%;
+            padding-right: 35px;
+            padding-bottom: 25px;
+            padding-top: 25px;
+
           }
 
 
           .column li {
-            list-style-position: outside;
-            list-style-type: '- ';
-            max-width: 550px;
-          }
-          .column2 li {
-            list-style-position: outside;
-            list-style-type: '- ';
+
+            list-style-type: circle;
+            list-style-position: inside;
+            max-width: 500px;
+            margin-left: 0;
           }
 
+          li span {
+            position: relative;
+            left: -12px;
+          }
 
+          .under {
+            border-bottom: 2px solid;
+          }
+
+          .tit {
+            padding-bottom: 5px;
+          }
           .base {
             padding-top: 20px;
             width: 100%
           }
-          .ll2 {
-            float: left;
-            width: 15%;
-            padding-top: 2px;
-          }
-          .rr2 {
-            float: left;
-            padding-left: 10px;
-            width: 85%;
-            margin-bottom: 40px;
-            line-height: 36px;
-          }
-          .under {
-            border-bottom: 0.1em solid;
-          }
-/*
+
           .sec {
             margin-bottom: 50px;
           }
-*/
+
 
           @media (max-width: 770px) {
 
@@ -282,100 +277,72 @@
                         <div style="padding-top: 25px;">
                         <a href="mailto:design@ag.co.kr" style='color: #000;'>design@ag.co.kr</a><br>02-763-2303  ← 디자인 프로젝트 문의</div>
                       </div>
-
+<!--
                         <input type="checkbox" id="question1" name="q" class="questions">
                         <label for="question1" class="question">
-                          <span class="under" id="toggle_button" onclick="change_text()">More Info</span>
+                          <span class="under" id="toggle_button" onclick="change_text()">See More</span>
                         </label>
                         <div class="answers">
                           <div class="text"><p>안그라픽스만의 전략과 창의성은 다양한 크리에이티브 영역에서 최선의 결과를 만들어내고 있습니다.</p></div>
-
-                          <div class="column">
-                            <div class="ll2">Design Strategy</div>
-                            <div class="rr2">
+                          <div class="caption column">
+                            <div class="tit">디자인 전략</div>
                               <ul>
                                 <li><span>삼성전자 디자인철학 스토리북</span></li>
                                 <li><span>한국관광안내표지 표준디자인 가이드</span></li>
-                                <li><span>한국관광안내표지 고도화 연구</span></li>
                                 <li><span>통영 박경리기념관 리모델링 연구</span></li>
-                                <li><span>신세계 매거진 콘셉트 제안</span></li>
-                                <li><span>아모레퍼시픽 아리따글꼴 인지도 조사 및 홍보</span></li>
                                 <li><span>인천공항 입국장 내 문화콘텐츠 적용 기초연구</span></li>
-                              </ul></div>
-                          </div>
-
-                          <div class="column">
-                            <div class="ll2">Creative Design</div>
-                            <div class="rr2">
+                              </ul>
+                            </div>
+                          <div class="caption column">
+                            <div class="tit">크리에이티브 디자인</div>
                               <ul>
                                 <li><span>대한민국 민주주의 100주년 전시</span></li>
                                 <li><span>삼성 기어 워치페이스 디자인 프로젝트</span></li>
                                 <li><span>한국 천주교회 230년 특별전</span></li>
                                 <li><span>아모레퍼시픽 아리따 흑체, 부리 프레스킷</span></li>
-                              </ul></div>
+                              </ul>
                             </div>
 
-                          <div class="column">
-                            <div class="ll2">Editorial</div>
-                            <div class="rr2">
+
+                          <div class="caption column">
+                            <div class="tit">에디토리얼 디자인</div>
                               <ul>
                                 <li><span>금호 아트홀 에디토리얼</span></li>
                                 <li><span>대우 E&C 매거진 ‘대우건설인’</span></li>
-                                <li><span>대우 푸르지오 매거진 ‘노빌리티’</span></li>
-                                <li><span>아주그룹 매거진 ‘아주좋은날’</span></li>
-                                <li><span>S/S TUNED 매거진</span></li>
-                                <li><span>한샘 50주년 사사</span></li>
                                 <li><span>아모레퍼시픽 ‘아리따 글꼴 여정’</span></li>
-                                <li><span>광주비엔날레 전시 도록</span></li>
                                 <li><span>평창올림픽 브랜드북</span></li>
-                                <li><span>타이포잔치 도록</span></li>
-                                <li><span>롯데제과 50주년</span></li>
-                                <li><span>현대카드 DESIGN without WORDS</span></li>
-                                <li><span>네이버 플레이뮤지엄</span></li>
-                              </ul></div>
+                              </ul>
                             </div>
-
-                          <div class="column">
-                            <div class="ll2">BX & Identity</div>
-                            <div class="rr2">
+                          <div class="caption column">
+                            <div class="tit">BX & 아이덴티티</div>
                               <ul>
                                 <li><span>신세계 발효곳간</span></li>
                                 <li><span>Projekt Produkt</span></li>
                                 <li><span>나이키컵 브랜딩</span></li>
                                 <li><span>북촌한옥마을 브랜딩</span></li>
-                                <li><span>삼성화재 통합 디자인</span></li>
-                                <li><span>한국관광안내표지 가이드</span></li>
-                                <li><span>삼성전자 CSR 프로그램 아이덴티티</span></li>
-                                <li><span>문화재청 문화유산방문캠페인 아이덴티티</span></li>
                               </ul>
-                            </div></div>
+                            </div>
 
 
-                          <div class="column">
-                            <div class="ll2">Digital Design</div>
-                            <div class="rr2">
+                          <div class="caption column">
+                            <div class="tit">디지털 디자인</div>
                               <ul>
                                 <li><span>CJ 대한통운 글로벌 통합 웹사이트</span></li>
                                 <li><span>CJ 소통채널 디자인</span></li>
-                                <li><span>CJ World 인트라넷 리뉴얼</span></li>
                                 <li><span>한국영상자료원 웹사이트 리뉴얼</span></li>
                                 <li><span>투썸플레이스 App 리뉴얼</span></li>
-                                <li><span>한화생명 라이프스타일 큐레이션 App ZUMO</span></li>
                               </ul>
-                            </div></div>
-
-                          <div class="column">
-                            <div class="ll2">Marketing</div>
-                            <div class="rr2">
+                            </div>
+                          <div class="caption column">
+                            <div class="tit">콘텐츠/마케팅</div>
                               <ul>
                                 <li><span>삼성화재 디지털매체 콘텐츠</span></li>
                                 <li><span>유니클로 온/오프라인 디자인</span></li>
                                 <li><span>GU 오프라인 광고물 위탁 제작</span></li>
                                 <li> <span>한국관광공사 대한민국 구석구석 SNS 통합 운영</span></li>
-                              </ul></div>
+                              </ul>
                             </div>
-
-                          </div>
+                          </div>   -->
                         </div>
 
 
@@ -384,32 +351,30 @@
                     <div class="sec">AGTI (Font)
                     <div style="padding-top: 25px;">
                       <a href="mailto:typo@ag.co.kr" style='color: #000;'>typo@ag.co.kr</a>
-                    </div>
+                    <br><a href="https://www.agfont.com">agfont.com</a></div>
 
-                    <input type="checkbox" id="question2" name="q" class="questions">
+<!--                    <input type="checkbox" id="question2" name="q" class="questions">
                     <label for="question2" class="question">
-                      <p class="under"  id="toggle_button" onclick="change_text()">More Info</p>
+                      <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
                     </label>
                     <div class="answers">
                       <div class="text"><p>AG 타이포그라피연구소는 연구를 바탕으로 글꼴을 멋짓고 키우며 새로운 글꼴 문화와 흐름을 만들고 있습니다. </p></div>
-                      <div class="column">
-                        <div class="ll2">대표 프로젝트</div>
-                        <div class="rr2">
+                      <div class="caption column">
+                        <div class="tit">대표 프로젝트</div>
                           <ul>
                             <li> <span>네이버문화재단 ‘마루’ 프로젝트</span></li>
                             <li> <span>아모레퍼시픽 ‘아리따체’</span></li>
                             <li> <span>대한불교조계종 ‘석보체’</span></li>
                             <li> <span>신세계백화점 ‘신세계체’</span></li>
                             <li> <span>국악방송 로고타입</span></li>
-                          </ul></div>
+                          </ul>
                         </div>
-                      <div class="column">
-                        <div class="ll2">글꼴</div>
-                        <div class="rr2">
+                      <div class="caption column">
+                        <div class="tit">글꼴</div>
                           <ul>
                             <li> <span>안상수체, 이상체, 미르체, 마노체, 둥근안상수체, 초특태고딕체, 최정호체, 훈민정음체 개발</span></li>
-                          </ul></div>
-                        </div>
+                          </p>
+                        </div>  -->
                     </div>
                   </div>
 
@@ -417,15 +382,15 @@
                       <div class="sec">AG Publishing (Books)
                       <div style="padding-top: 25px;">
                         <a href="mailto:pub@ag.co.kr" style='color: #000;'>pub@ag.co.kr</a>
-                      </div>
+                      <br><a href="https://agbook.co.kr">agbook.co.kr</a></div>
 
-                      <input type="checkbox" id="question3" name="q" class="questions">
+<!--                      <input type="checkbox" id="question3" name="q" class="questions">
                       <label for="question3" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">More Info</p>
+                        <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
                       </label>
                       <div class="answers">
-                        <div class="text" style="padding-bottom: 0;"><p>안그라픽스 출판은 타이포그래피, 정보 디자인, 브랜드 디자인 및 건축 분야의 좋은 책을 기획·출간하고 있으며, 출판 분야에서 가장 전문적이고 창의적 디자인 책을 만들고 있습니다.</p></div>
-                    </div>
+                        <div class="text"><p>안그라픽스 출판은 타이포그래피, 정보 디자인, 브랜드 디자인 및 건축 분야의 좋은 책을 기획·출간하고 있으며, 출판 분야에서 가장 전문적이고 창의적 디자인 책을 만들고 있습니다.</p></div>
+  -->                    </div>
                     </div>
 
                     <div class="content">
@@ -433,21 +398,20 @@
                       <br><br>
                         <a href="mailto:media@ag.co.kr" style='color: #000;'>media@ag.co.kr</a>
 
-                      <input type="checkbox" id="question4" name="q" class="questions">
+<!--                      <input type="checkbox" id="question4" name="q" class="questions">
                       <label for="question4" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">More Info</p>
+                        <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
                       </label>
                       <div class="answers">
-                        <div class="column2">
-                          <div class="ll2">대표 프로젝트</div>
-                          <div class="rr2">
+                        <div class="caption column" style="            padding-top: 15px;">
+                          <div class="tit">대표 프로젝트</div>
                             <ul>
                               <li> <span>신세계 매거진</span></li>
                               <li> <span>올리브 매거진</span></li>
                               <li> <span>론리플래닛 매거진</span></li>
                               <li> <span>아시아나 기내지</span></li>
                               <li> <span>GMT KOREA 매거진</span></li>
-                            </ul></div>
+                            </ul>   -->
                           </div>
                       </div>
 
@@ -457,22 +421,21 @@
                       <div style="padding-top: 25px;">
                         <a href="mailto:image@ag.co.kr" style='color: #000;'>image@ag.co.kr</a></div>
 
-                      <input type="checkbox" id="question5" name="q" class="questions">
+<!--                      <input type="checkbox" id="question5" name="q" class="questions">
                       <label for="question5" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">More Info</p>
+                        <p class="under"  id="toggle_button" onclick="change_text()">See More</p>
                       </label>
                       <div class="answers">
-                        <div class="column2">
-                          <div class="ll2">대표 프로젝트</div>
-                          <div class="rr2">
+                        <div class="caption column" style="            padding-top: 15px;">
+                          <div class="tit">대표 프로젝트</div>
                             <ul>
                               <li> <span>신세계 헤리티지 영상</span></li>
                               <li> <span>신세계 아트, 패션 eDM</span></li>
                               <li> <span>신세계백화점 홍보 영상</span></li>
                               <li> <span>GMT KOREA 유튜브 영상</span></li>
-                            </ul></div>
+                            </ul>
                           </div>
-                        </div>
+                        </div>  -->
                       </div>
 
 

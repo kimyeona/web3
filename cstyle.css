@@ -230,35 +230,7 @@ main {
     list-style-position: outside;
   }*/
 
-  
-  .ll {
-    float: left;
-    width: 10%;
-    padding-top: 2px;
-  }
-  .rr {
-    float: left;
-    width: 90%;
-    margin-bottom: 32px;
-    line-height: 38px;
-  }
 
-  @media (max-width: 1078px){
-    .ll {
-      width: 15%;
-    }
-    .rr {
-      width: 85%;
-    }
-  }
-  @media (max-width: 500px){
-    .ll {
-      width: 20%;
-    }
-    .rr {
-      width: 80%;
-    }
-  }
 
 /*responsive*/
 
