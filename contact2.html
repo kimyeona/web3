@@ -191,7 +191,7 @@
             width: 100%;
           }
 
-
+/*
           .column li {
             list-style-position: outside;
             list-style-type: '- ';
@@ -200,6 +200,18 @@
           .column2 li {
             list-style-position: outside;
             list-style-type: '- ';
+          } */
+
+          .column ul {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 1em;
+          }
+          .column ul > li:before {
+            display: inline-block;
+            content: "-";
+            width: 1em;
+            margin-left: -1em;
           }
 
 
