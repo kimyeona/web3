@@ -122,10 +122,13 @@
             width: 100%!important;
             height: 0;
             overflow: hidden;
-            z-index: -1;
+
             position: relative;
             opacity: 0;
             margin-bottom: 60px;
+          }
+          .line {
+            border-bottom: 0.1em solid;
           }
 
           .text {
@@ -216,9 +219,7 @@
             margin-bottom: 40px;
             line-height: 36px;
           }
-          .under {
-            border-bottom: 0.1em solid;
-          }
+
 /*
           .sec {
             margin-bottom: 50px;
@@ -298,6 +299,12 @@
             document.getElementById("toggle_button").innerHTML="See More";
         }}  */
         </script>
+        <script src="/path/to/foundation.min.js"></script>
+<script>
+$('label a').on('click', function(event) {
+  event.stopPropagation();
+});
+</script>
 
                 <div class="row">
 
@@ -320,7 +327,7 @@
 
                         <input type="checkbox" id="question1" name="q" class="questions">
                         <label for="question1" class="question">
-                          <span class="under" id="toggle_button" onclick="change_text()">more info</span>
+                          <span class="line" id="toggle_button" onclick="change_text()">more info</span>
                         </label>
                         <div class="answers">
                           <div class="text"><p>안그라픽스만의 전략과 창의성은 다양한 크리에이티브 영역에서 최선의 결과를 만들어내고 있습니다.</p></div>
@@ -343,30 +350,28 @@
                             <div class="ll2">Creative Design</div>
                             <div class="rr2">
                               <ul>
-                                <li><span>대한민국 민주주의 100주년 전시</span></li>
+                                <li><span>대한민국 민주주의 100주년 크리에이티브</span></li>
                                 <li><span>삼성 기어 워치페이스 디자인 프로젝트</span></li>
-                                <li><span>한국 천주교회 230년 특별전</span></li>
                                 <li><span>아모레퍼시픽 아리따 흑체, 부리 프레스킷</span></li>
-                              </ul></div>
-                            </div>
-
-                          <div class="column">
-                            <div class="ll2">Editorial</div>
-                            <div class="rr2">
-                              <ul>
-                                <li><span>금호 아트홀 에디토리얼</span></li>
+                                <li><span>한샘 50주년 사사</span></li>
+                                <li><span>아모레퍼시픽 ‘아리따 글꼴 여정’</span></li>
+                                <li><span>롯데제과 50주년 사사</span></li>
+                                <li><span>현대카드 DESIGN without WORDS 1,2</span></li>
+                                <li><span>네이버 플레이뮤지엄 북</span></li>
+                                <li><span>폭스바겐 Inspiration 북</span></li>
                                 <li><span>대우 E&C 매거진 ‘대우건설인’</span></li>
                                 <li><span>대우 푸르지오 매거진 ‘노빌리티’</span></li>
                                 <li><span>아주그룹 매거진 ‘아주좋은날’</span></li>
+                                <li><span>금호 아트홀 에디토리얼 디자인</span></li>
+                                <li><span>인간, 문화재 무송 박병천 북디자인</span></li>
                                 <li><span>S/S TUNED 매거진</span></li>
-                                <li><span>한샘 50주년 사사</span></li>
-                                <li><span>아모레퍼시픽 ‘아리따 글꼴 여정’</span></li>
+                                <li><span>분더샵 매거진</span></li>
+                                <li><span>프리메라 브랜드 북</span></li>
                                 <li><span>광주비엔날레 전시 도록</span></li>
                                 <li><span>평창올림픽 브랜드북</span></li>
-                                <li><span>타이포잔치 도록</span></li>
-                                <li><span>롯데제과 50주년</span></li>
-                                <li><span>현대카드 DESIGN without WORDS</span></li>
-                                <li><span>네이버 플레이뮤지엄</span></li>
+                                <li><span>타이포잔치 도록 : 몸</span></li>
+                                <li><span>오설록 매거진</span></li>
+                                <li><span>XUE XUE 패키지 디자인</span></li>
                               </ul></div>
                             </div>
 
@@ -423,7 +428,7 @@
 
                     <input type="checkbox" id="question2" name="q" class="questions">
                     <label for="question2" class="question">
-                      <p class="under"  id="toggle_button" onclick="change_text()">more info</p>
+                      <p class="line"  id="toggle_button" onclick="change_text()">more info</p>
                     </label>
                     <div class="answers">
                       <div class="text"><p>AG 타이포그라피연구소는 연구를 바탕으로 글꼴을 멋짓고 키우며 새로운 글꼴 문화와 흐름을 만들고 있습니다. </p></div>
@@ -445,6 +450,7 @@
                             <li> <span>안상수체, 이상체, 미르체, 마노체, 둥근안상수체, 초특태고딕체, 최정호체, 훈민정음체 개발</span></li>
                           </ul></div>
                         </div>
+                        <div class="text"><span class="under"><a href="https://www.agfont.com" target="_blank">agfont.com</a></span>  ← 바로가기</div>
                     </div>
                   </div>
 
@@ -456,10 +462,11 @@
 
                       <input type="checkbox" id="question3" name="q" class="questions">
                       <label for="question3" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">more info</p>
+                        <p class="line"  id="toggle_button" onclick="change_text()">more info</p>
                       </label>
                       <div class="answers">
-                        <div class="text" style="padding-bottom: 0;"><p>안그라픽스 출판은 타이포그래피, 정보 디자인, 브랜드 디자인 및 건축 분야의 좋은 책을 기획·출간하고 있으며, 출판 분야에서 가장 전문적이고 창의적 디자인 책을 만들고 있습니다.</p></div>
+                        <div class="text" style="padding-bottom: 15px;"><p>안그라픽스 출판은 타이포그래피, 정보 디자인, 브랜드 디자인 및 건축 분야의 좋은 책을 기획·출간하고 있으며, 출판 분야에서 가장 전문적이고 창의적 디자인 책을 만들고 있습니다.</p></div>
+                        <div style="padding-bottom: 20px;"><span class="under"><a href="https://www.agbook.co.kr" target="_blank">agbook.co.kr</a></span>  ← 바로가기</div>
                     </div>
                     </div>
 
@@ -470,7 +477,7 @@
 
                       <input type="checkbox" id="question4" name="q" class="questions">
                       <label for="question4" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">more info</p>
+                        <p class="line"  id="toggle_button" onclick="change_text()">more info</p>
                       </label>
                       <div class="answers">
                         <div class="column2">
@@ -494,7 +501,7 @@
 
                       <input type="checkbox" id="question5" name="q" class="questions">
                       <label for="question5" class="question">
-                        <p class="under"  id="toggle_button" onclick="change_text()">more info</p>
+                        <p class="line"  id="toggle_button" onclick="change_text()">more info</p>
                       </label>
                       <div class="answers">
                         <div class="column2">

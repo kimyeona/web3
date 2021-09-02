@@ -383,6 +383,16 @@ main {
   }
 
 }
+.under {
+  border-bottom: 0.1em solid;
+  padding-bottom: 4px;
+  transition: 0.2s ease-in;
+}
+.under:hover {
+  border-bottom: 0.1em solid #000;
+  background-color: #000;
+  color: #fff;
+}
 
 
 @media (max-width: 1078px){
