@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'ahn-bold';
+    src: url('../font/ahn-bold.woff') format('woff'); /* Modern Browsers */
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'ag-choi';
+    src: url('../font/ag-choi.woff') format('woff'); /* Modern Browsers */
+
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
